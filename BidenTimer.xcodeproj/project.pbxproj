@@ -8,22 +8,62 @@
 
 /* Begin PBXBuildFile section */
 		DFD349E225590EF200E396C8 /* BidenTimerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFD349E125590EF200E396C8 /* BidenTimerApp.swift */; };
-		DFD349E425590EF200E396C8 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFD349E325590EF200E396C8 /* ContentView.swift */; };
+		DFD349E425590EF200E396C8 /* Ticker.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFD349E325590EF200E396C8 /* Ticker.swift */; };
 		DFD349E625590EF200E396C8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DFD349E525590EF200E396C8 /* Assets.xcassets */; };
 		DFD349E925590EF200E396C8 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DFD349E825590EF200E396C8 /* Preview Assets.xcassets */; };
-		DFD349EB25590EF200E396C8 /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFD349EA25590EF200E396C8 /* Persistence.swift */; };
 		DFD349EE25590EF200E396C8 /* BidenTimer.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = DFD349EC25590EF200E396C8 /* BidenTimer.xcdatamodeld */; };
+		DFD349F72559141E00E396C8 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFD349F62559141E00E396C8 /* ContentView.swift */; };
+		DFD34A03255919C000E396C8 /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DFD34A02255919C000E396C8 /* WidgetKit.framework */; };
+		DFD34A05255919C000E396C8 /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DFD34A04255919C000E396C8 /* SwiftUI.framework */; };
+		DFD34A08255919C000E396C8 /* BidenTickerWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFD34A07255919C000E396C8 /* BidenTickerWidget.swift */; };
+		DFD34A0B255919C100E396C8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DFD34A0A255919C100E396C8 /* Assets.xcassets */; };
+		DFD34A0D255919C100E396C8 /* BidenTickerWidget.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = DFD34A09255919C000E396C8 /* BidenTickerWidget.intentdefinition */; };
+		DFD34A0E255919C100E396C8 /* BidenTickerWidget.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = DFD34A09255919C000E396C8 /* BidenTickerWidget.intentdefinition */; };
+		DFD34A11255919C100E396C8 /* BidenTickerWidgetExtension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = DFD34A00255919C000E396C8 /* BidenTickerWidgetExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		DFD34A1E25591DC500E396C8 /* Ticker.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFD349E325590EF200E396C8 /* Ticker.swift */; };
+		DFD34A2125591F3900E396C8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DFD349E525590EF200E396C8 /* Assets.xcassets */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		DFD34A0F255919C100E396C8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DFD349D625590EF100E396C8 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DFD349FF255919C000E396C8;
+			remoteInfo = BidenTickerWidgetExtension;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		DFD34A15255919C100E396C8 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				DFD34A11255919C100E396C8 /* BidenTickerWidgetExtension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		DFD349DE25590EF200E396C8 /* BidenTimer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BidenTimer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DFD349E125590EF200E396C8 /* BidenTimerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BidenTimerApp.swift; sourceTree = "<group>"; };
-		DFD349E325590EF200E396C8 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		DFD349E325590EF200E396C8 /* Ticker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ticker.swift; sourceTree = "<group>"; };
 		DFD349E525590EF200E396C8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DFD349E825590EF200E396C8 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		DFD349EA25590EF200E396C8 /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
 		DFD349ED25590EF200E396C8 /* BidenTimer.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = BidenTimer.xcdatamodel; sourceTree = "<group>"; };
 		DFD349EF25590EF200E396C8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DFD349F62559141E00E396C8 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		DFD34A00255919C000E396C8 /* BidenTickerWidgetExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = BidenTickerWidgetExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		DFD34A02255919C000E396C8 /* WidgetKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WidgetKit.framework; path = System/Library/Frameworks/WidgetKit.framework; sourceTree = SDKROOT; };
+		DFD34A04255919C000E396C8 /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = System/Library/Frameworks/SwiftUI.framework; sourceTree = SDKROOT; };
+		DFD34A07255919C000E396C8 /* BidenTickerWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BidenTickerWidget.swift; sourceTree = "<group>"; };
+		DFD34A09255919C000E396C8 /* BidenTickerWidget.intentdefinition */ = {isa = PBXFileReference; lastKnownFileType = file.intentdefinition; path = BidenTickerWidget.intentdefinition; sourceTree = "<group>"; };
+		DFD34A0A255919C100E396C8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		DFD34A0C255919C100E396C8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -34,6 +74,15 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		DFD349FD255919C000E396C8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DFD34A05255919C000E396C8 /* SwiftUI.framework in Frameworks */,
+				DFD34A03255919C000E396C8 /* WidgetKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -41,6 +90,8 @@
 			isa = PBXGroup;
 			children = (
 				DFD349E025590EF200E396C8 /* BidenTimer */,
+				DFD34A06255919C000E396C8 /* BidenTickerWidget */,
+				DFD34A01255919C000E396C8 /* Frameworks */,
 				DFD349DF25590EF200E396C8 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -49,6 +100,7 @@
 			isa = PBXGroup;
 			children = (
 				DFD349DE25590EF200E396C8 /* BidenTimer.app */,
+				DFD34A00255919C000E396C8 /* BidenTickerWidgetExtension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -57,9 +109,9 @@
 			isa = PBXGroup;
 			children = (
 				DFD349E125590EF200E396C8 /* BidenTimerApp.swift */,
-				DFD349E325590EF200E396C8 /* ContentView.swift */,
+				DFD349E325590EF200E396C8 /* Ticker.swift */,
+				DFD349F62559141E00E396C8 /* ContentView.swift */,
 				DFD349E525590EF200E396C8 /* Assets.xcassets */,
-				DFD349EA25590EF200E396C8 /* Persistence.swift */,
 				DFD349EF25590EF200E396C8 /* Info.plist */,
 				DFD349EC25590EF200E396C8 /* BidenTimer.xcdatamodeld */,
 				DFD349E725590EF200E396C8 /* Preview Content */,
@@ -75,6 +127,26 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
+		DFD34A01255919C000E396C8 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				DFD34A02255919C000E396C8 /* WidgetKit.framework */,
+				DFD34A04255919C000E396C8 /* SwiftUI.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		DFD34A06255919C000E396C8 /* BidenTickerWidget */ = {
+			isa = PBXGroup;
+			children = (
+				DFD34A07255919C000E396C8 /* BidenTickerWidget.swift */,
+				DFD34A09255919C000E396C8 /* BidenTickerWidget.intentdefinition */,
+				DFD34A0A255919C100E396C8 /* Assets.xcassets */,
+				DFD34A0C255919C100E396C8 /* Info.plist */,
+			);
+			path = BidenTickerWidget;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -85,15 +157,34 @@
 				DFD349DA25590EF200E396C8 /* Sources */,
 				DFD349DB25590EF200E396C8 /* Frameworks */,
 				DFD349DC25590EF200E396C8 /* Resources */,
+				DFD34A15255919C100E396C8 /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				DFD34A10255919C100E396C8 /* PBXTargetDependency */,
 			);
 			name = BidenTimer;
 			productName = BidenTimer;
 			productReference = DFD349DE25590EF200E396C8 /* BidenTimer.app */;
 			productType = "com.apple.product-type.application";
+		};
+		DFD349FF255919C000E396C8 /* BidenTickerWidgetExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DFD34A12255919C100E396C8 /* Build configuration list for PBXNativeTarget "BidenTickerWidgetExtension" */;
+			buildPhases = (
+				DFD349FC255919C000E396C8 /* Sources */,
+				DFD349FD255919C000E396C8 /* Frameworks */,
+				DFD349FE255919C000E396C8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = BidenTickerWidgetExtension;
+			productName = BidenTickerWidgetExtension;
+			productReference = DFD34A00255919C000E396C8 /* BidenTickerWidgetExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
 		};
 /* End PBXNativeTarget section */
 
@@ -105,6 +196,9 @@
 				LastUpgradeCheck = 1210;
 				TargetAttributes = {
 					DFD349DD25590EF200E396C8 = {
+						CreatedOnToolsVersion = 12.1;
+					};
+					DFD349FF255919C000E396C8 = {
 						CreatedOnToolsVersion = 12.1;
 					};
 				};
@@ -123,6 +217,7 @@
 			projectRoot = "";
 			targets = (
 				DFD349DD25590EF200E396C8 /* BidenTimer */,
+				DFD349FF255919C000E396C8 /* BidenTickerWidgetExtension */,
 			);
 		};
 /* End PBXProject section */
@@ -137,6 +232,15 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		DFD349FE255919C000E396C8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DFD34A2125591F3900E396C8 /* Assets.xcassets in Resources */,
+				DFD34A0B255919C100E396C8 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -144,14 +248,33 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DFD349EB25590EF200E396C8 /* Persistence.swift in Sources */,
-				DFD349E425590EF200E396C8 /* ContentView.swift in Sources */,
+				DFD349F72559141E00E396C8 /* ContentView.swift in Sources */,
+				DFD349E425590EF200E396C8 /* Ticker.swift in Sources */,
 				DFD349EE25590EF200E396C8 /* BidenTimer.xcdatamodeld in Sources */,
 				DFD349E225590EF200E396C8 /* BidenTimerApp.swift in Sources */,
+				DFD34A0E255919C100E396C8 /* BidenTickerWidget.intentdefinition in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DFD349FC255919C000E396C8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DFD34A08255919C000E396C8 /* BidenTickerWidget.swift in Sources */,
+				DFD34A1E25591DC500E396C8 /* Ticker.swift in Sources */,
+				DFD34A0D255919C100E396C8 /* BidenTickerWidget.intentdefinition in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		DFD34A10255919C100E396C8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DFD349FF255919C000E396C8 /* BidenTickerWidgetExtension */;
+			targetProxy = DFD34A0F255919C100E396C8 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		DFD349F025590EF200E396C8 /* Debug */ = {
@@ -273,6 +396,7 @@
 		DFD349F325590EF200E396C8 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
@@ -285,7 +409,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = net.lucasdesouza.BidenTimer;
+				PRODUCT_BUNDLE_IDENTIFIER = net.lucasdesouza.PresidentialInaugurationTimer;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -295,6 +419,7 @@
 		DFD349F425590EF200E396C8 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
@@ -307,8 +432,50 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = net.lucasdesouza.BidenTimer;
+				PRODUCT_BUNDLE_IDENTIFIER = net.lucasdesouza.PresidentialInaugurationTimer;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		DFD34A13255919C100E396C8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = Y259ZT3SQK;
+				INFOPLIST_FILE = BidenTickerWidget/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = net.lucasdesouza.PresidentialInaugurationTimer.PresidentInaugurationTimerWidget;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		DFD34A14255919C100E396C8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = Y259ZT3SQK;
+				INFOPLIST_FILE = BidenTickerWidget/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = net.lucasdesouza.PresidentialInaugurationTimer.PresidentInaugurationTimerWidget;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -331,6 +498,15 @@
 			buildConfigurations = (
 				DFD349F325590EF200E396C8 /* Debug */,
 				DFD349F425590EF200E396C8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DFD34A12255919C100E396C8 /* Build configuration list for PBXNativeTarget "BidenTickerWidgetExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DFD34A13255919C100E396C8 /* Debug */,
+				DFD34A14255919C100E396C8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
