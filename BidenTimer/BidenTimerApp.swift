@@ -9,10 +9,13 @@ import SwiftUI
 
 @main
 struct BidenTimerApp: App {
-
+    @State var page: Int? = 0
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            NavigationView {
+                Menu(page: $page)
+                TickerPage()
+            }
         }
     }
 }

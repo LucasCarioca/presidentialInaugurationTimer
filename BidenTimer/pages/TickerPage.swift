@@ -7,12 +7,12 @@
 
 import SwiftUI
 
-struct ContentView: View {
+struct TickerPage: View {
     var body: some View {
         ZStack{
             Image("bg").resizable().edgesIgnoringSafeArea(.all)
             VStack{
-                Image("seal").resizable().frame(width: 300, height: 300, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
+                Image("seal").resizable().frame(width: 300, height: 300, alignment: .center)
                 Text("The next President of the United States in...").font(.largeTitle).multilineTextAlignment(.center).foregroundColor(.white)
                 Spacer()
                 Ticker()
@@ -23,8 +23,8 @@ struct ContentView: View {
     }
 }
 
-struct ContentView_Previews: PreviewProvider {
+struct TickerPage_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView()
+        TickerPage()
     }
 }
